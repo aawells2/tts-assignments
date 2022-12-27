@@ -1,29 +1,45 @@
+
 class Main {
-  //1.
-  static int arr[] = { 1,2,3,4,5 };
- 
-    static int sumOfArray()
-    {
-        int sumOfArray = 0; 
-        for (int i = 0; i < arr.length; i++)
-            sumOfArray += arr[i];
- 
-        return sumOfArray;
-    }
-    //2.) NO OUTPUT - SYNTAX ERRORS
-    //3.)
-  public static double toPower(int size,int power){
-  
-    
-    return Math.pow(size,power);
+  /*
+   * Create a Java Calculator Class that does the following five commands:
+   * 
+   * An add method that takes in two integer numbers and adds them together the
+   * call to that method would look like this: add(int num1, int num2)
+   * 
+   * A subtraction method that takes in two integers and subtracts them from one
+   * another would look like this: subtract( int num1, int num2)
+   * 
+   * A multiplication method that takes in two integer numbers and multiplies them
+   * together the call to that method would look like this: multiply(int num1, int
+   * num2)
+   * 
+   * A division method that takes in two integer numbers and divides them the call
+   * to that method would look like this: divide(int num1, int num2)
+   * A square method that takes in one integer and squares it: square(int num1,
+   * int num2)lkmlkmlkmklmkl
+   */
+  public static void addNumbers(int num1, int num2) {
+    System.out.println(num1 + num2);
   }
-  
-    public static void main(String[] args)
-    {
-        System.out.println("The sum of the array is: "
-                           + sumOfArray());
-      System.out.println("Three to the power of 4 is: " + toPower(3,4));
-    }
+
+  public static void subtractNumbers(int num1, int num2) {
+    System.out.println(num1 - num2);
+  }
+
+  public static void multiplyNumbers(int num1, int num2) {
+    System.out.println(num1 * num2);
+  }
+
+  public static void divideNumbers(float num1, float num2) {
+    System.out.println(num1 / num2);
+  }
+
+  public static void main(String[] args) {
+    System.out.println("Testing...");
+    addNumbers(2, 3);
+    subtractNumbers(6, 8);
+    multiplyNumbers(5, 4);
+    divideNumbers(10, 9);
+
+  }
 }
-
-
